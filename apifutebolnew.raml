@@ -1,0 +1,72 @@
+#%RAML 1.0
+title: ApiFutebolNew
+
+#setor de protocolos ultilizados
+
+#versão da especificação da api
+version: 1.0
+
+#protocolos de rede ultilizados na aplicação
+protocols: [HTTP,HTTPS]
+
+#tipos de midias ultilizados na aplicação
+mediaType: [application/json, application/xml]
+
+#Setor para redirecionamento de arquivos específicos
+uses:
+
+  #Redirecionamento para types (mapeamento dos campos de cada endpoint)
+  types: libraries/types.raml
+  #Redirecionamento para resourceTypes (response code e tratamento para cada retorno existente da aplicação)
+  resourceTypes: libraries/resourceTypes.raml
+
+/status:
+  get:
+    description: retorna o status da aplicação
+  type:
+     resourceTypes.collection:
+      typeCollection: types.statusReturn
+      exampleCollection: !include examples/getStatus/Response.json
+
+/list:
+  get:
+    description: retorna todos os times salvos 
+  type:
+     resourceTypes.collection:
+      typeCollection: types.getTimes
+      exampleCollection: !include examples/getTimes/Response.json
+
+/create:
+  post:
+      description: Cadastra novos times no campeonato
+  type:
+    resourceTypes.collection:
+      PostRequest: types.postTimesRequest
+      examplePostRequestCollection: !include examples/postCriarTimes/Request.json
+
+      PostResponse: types.postTimesResponse
+      examplePostResponseCollection: !include examples/postCriarTimes/Response.json
+
+/search:
+  post:
+      description: Cadastra novos times no campeonato
+  type:
+    resourceTypes.collection:
+      PostRequest: types.postTimeInfoRequest
+      examplePostRequestCollection: !include examples/postTimesInfo/Request.json
+
+      PostResponse: types.postTimeInfoResponse
+      examplePostResponseCollection: !include examples/postTimesInfo/Response.json
+
+/update:
+  put:
+    description: Atualizar dados do time nos registros
+  type:
+    resourceTypes.collection:
+      PutRequest: types.putTimeRequest
+      examplePutRequestCollection: !include examples/putAtualizarTimes/Request.json
+      PutResponse: types.putTimeResponse
+      examplePutResponseCollection: !include examples/putAtualizarTimes/Response.json
+
+
+

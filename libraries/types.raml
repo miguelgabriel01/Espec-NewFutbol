@@ -1,0 +1,37 @@
+#%RAML 1.0 Library
+usage: Types
+
+types:
+  ErrorMessageDefinition:
+    type: object
+    properties: 
+      message?: string | nil
+      processor?: string | nil
+      errors?: StackErrorDefinition[]
+      
+  StackErrorDefinition:
+    type: object
+    properties: 
+      code: string | nil
+      message: string | nil
+
+  statusReturn: 
+    type: !include ../schemas/getStatus/Response.json
+  
+  getTimes:
+    type: !include ../schemas/getTimes/Response.json
+
+  postTimesRequest:
+    type: !include ../schemas/postCriarTimes/Request.json
+  postTimesResponse:
+    type: !include ../schemas/postCriarTimes/Response.json
+
+  postTimeInfoRequest:
+    type: !include ../schemas/postTimesInfo/Request.json
+  postTimeInfoResponse:
+    type: !include ../schemas/postTimesInfo/Response.json
+
+  putTimeRequest:
+    type: !include ../schemas/putAtualizarTimes/Request.json
+  putTimeResponse:
+    type: !include ../schemas/putAtualizarTimes/Response.json

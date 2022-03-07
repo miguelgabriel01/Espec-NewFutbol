@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "requestTime": {
+      "type": "string"
+    },
+    "desenvolvedor": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "github": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "title",
+    "version",
+    "requestTime",
+    "desenvolvedor",
+    "email",
+    "github"
+  ]
+}

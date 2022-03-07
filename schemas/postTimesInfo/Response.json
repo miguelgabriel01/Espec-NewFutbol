@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "nomeDoTime": {
+      "type": "string"
+    },
+    "anoDeFundacao": {
+      "type": "integer"
+    },
+    "cidade": {
+      "type": "string"
+    },
+    "pais": {
+      "type": "string"
+    },
+    "totalDeTitulos": {
+      "type": "integer"
+    },
+    "maiorTitulo": {
+      "type": "string"
+    },
+    "estadio": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "nomeDoTime",
+    "anoDeFundacao",
+    "cidade",
+    "pais",
+    "totalDeTitulos",
+    "maiorTitulo",
+    "estadio"
+  ]
+}

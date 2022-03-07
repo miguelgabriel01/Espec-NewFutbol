@@ -1,0 +1,48 @@
+[
+	{
+		"nomeDoTime":"Sport Fc",
+		"anoDeFundacao":1767,
+		"cidade":"Recife",
+		"pais":"Brasil",
+		"totalDeTitulos":46,
+		"maiorTitulo":"Campeão da copa do Brasil em 2008",
+		"estadio":"Ilha Do Retiro"
+	},
+	{
+		"nomeDoTime":"Nautico FC",
+		"anoDeFundacao":1962,
+		"cidade":"Recife",
+		"pais":"Brasil",
+		"totalDeTitulos":20,
+		"maiorTitulo":"Hexa campeão do Campeonato pernambucano",
+		"estadio":"Aflitos"
+	},
+		{
+		"nomeDoTime":"Sociedade Esportiva Palmeiras",
+		"anoDeFundacao":1914,
+		"cidade":"São Paulo",
+		"pais":"Brasil",
+		"totalDeTitulos":350,
+		"maiorTitulo":"*Mundial De Clubes*",
+		"estadio":"Allianz Parque"
+	},
+		{
+		"nomeDoTime":"Juventus FC",
+		"anoDeFundacao":1897,
+		"cidade":"Turim",
+		"pais":"Italia",
+		"totalDeTitulos":36,
+		"maiorTitulo":"Serie A Copa Italia",
+		"estadio":"Juventus Stadium"
+	},
+		{
+		"nomeDoTime":"Real Madrid Club De Futebol",
+		"anoDeFundacao":1902,
+		"cidade":"Madrid",
+		"pais":"Espanha",
+		"totalDeTitulos":20,
+		"maiorTitulo":"Liga Dos Campeões",
+		"estadio":"Estadio Santiago Bernabeu"
+	}	
+]
+
